@@ -1,0 +1,13 @@
+# Target labels
+ bootloader
+# Source files and their labels
+/Users/jonathanramirez/esp/esp32-master/build/CMakeFiles/bootloader
+/Users/jonathanramirez/esp/esp32-master/build/CMakeFiles/bootloader.rule
+/Users/jonathanramirez/esp/esp32-master/build/CMakeFiles/bootloader-complete.rule
+/Users/jonathanramirez/esp/esp32-master/build/bootloader-prefix/src/bootloader-stamp/bootloader-build.rule
+/Users/jonathanramirez/esp/esp32-master/build/bootloader-prefix/src/bootloader-stamp/bootloader-configure.rule
+/Users/jonathanramirez/esp/esp32-master/build/bootloader-prefix/src/bootloader-stamp/bootloader-download.rule
+/Users/jonathanramirez/esp/esp32-master/build/bootloader-prefix/src/bootloader-stamp/bootloader-install.rule
+/Users/jonathanramirez/esp/esp32-master/build/bootloader-prefix/src/bootloader-stamp/bootloader-mkdir.rule
+/Users/jonathanramirez/esp/esp32-master/build/bootloader-prefix/src/bootloader-stamp/bootloader-patch.rule
+/Users/jonathanramirez/esp/esp32-master/build/bootloader-prefix/src/bootloader-stamp/bootloader-update.rule

@@ -1,0 +1,2 @@
+source /Users/jonathanramirez/esp/esp32-master/build/bootloader/gdbinit/symbols
+source /Users/jonathanramirez/esp/esp32-master/build/bootloader/gdbinit/connect

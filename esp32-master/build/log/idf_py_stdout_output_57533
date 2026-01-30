@@ -1,0 +1,150 @@
+Command: /Users/jonathanramirez/.espressif/python_env/idf5.5_py3.12_env/bin/python /Users/jonathanramirez/esp/esp-idf/tools/idf_monitor.py -p /dev/cu.usbserial-110 -b 115200 --toolchain-prefix xtensa-esp32-elf- --target esp32 --revision 0 /Users/jonathanramirez/esp/esp32-master/build/esp32-master.elf /Users/jonathanramirez/esp/esp32-master/build/bootloader/bootloader.elf -m '/Users/jonathanramirez/.espressif/python_env/idf5.5_py3.12_env/bin/python' '/Users/jonathanramirez/esp/esp-idf/tools/idf.py'
+[0;32mI (156) esp_image: segment�ets Jul 29 2019 12:21:46[0m
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6384
+load:0x40078000,len:15916
+load:0x40080400,len:3920
+entry 0x40080644
+[0;32mI (27) boot: ESP-IDF v5.5.2 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time Jan 18 2026 20:33:02[0m
+[0;32mI (28) boot: Multicore bootloader[0m
+[0;32mI (29) boot: chip revision: v3.0[0m
+[0;32mI (32) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (35) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (39) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (42) boot: Enabling RNG early entropy source...[0m
+[0;32mI (47) boot: Partition Table:[0m
+[0;32mI (49) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (56) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (62) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (69) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (75) boot: End of partition table[0m
+[0;32mI (79) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=31cech (204012) map[0m
+[0;32mI (156) esp_image: segment 1: paddr=00041d14 vaddr=3ffb0000 size=040a0h ( 16544) load[0m
+[0;32mI (162) esp_image: segment 2: paddr=00045dbc vaddr=40080000 size=0a25ch ( 41564) load[0m
+[0;32mI (179) esp_image: segment 3: paddr=00050020 vaddr=400d0020 size=a21d8h (664024) map[0m
+[0;32mI (406) esp_image: segment 4: paddr=000f2200 vaddr=4008a25c size=0f9b8h ( 63928) load[0m
+[0;32mI (431) esp_image: segment 5: paddr=00101bc0 vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (444) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (444) boot: Disabling RNG early entropy source...[0m
+[0;32mI (454) cpu_start: Multicore app[0m
+[0;32mI (462) cpu_start: GPIO 3 and 1 are used as console UART I/O pins[0m
+[0;32mI (463) cpu_start: Pro cpu start user code[0m
+[0;32mI (463) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (464) app_init: Application information:[0m
+[0;32mI (468) app_init: Project name:     esp32-master[0m
+[0;32mI (473) app_init: App version:      1[0m
+[0;32mI (476) app_init: Compile time:     Jan 19 2026 16:36:20[0m
+[0;32mI (481) app_init: ELF file SHA256:  a644e13f2...[0m
+[0;32mI (485) app_init: ESP-IDF:          v5.5.2[0m
+[0;32mI (489) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (493) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (497) efuse_init: Chip rev:         v3.0[0m
+[0;32mI (501) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (507) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (512) heap_init: At 3FFB91E8 len 00026E18 (155 KiB): DRAM[0m
+[0;32mI (518) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (523) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (528) heap_init: At 40099C14 len 000063EC (24 KiB): IRAM[0m
+[0;32mI (535) spi_flash: detected chip: generic[0m
+[0;32mI (537) spi_flash: flash io: dio[0m
+[0;33mW (540) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (554) main_task: Started on CPU0[0m
+[0;32mI (564) main_task: Calling app_main()[0m
+[0;32mI (584) wifi_station: ESP_WIFI_MODE_STA[0m
+[0;32mI (594) wifi:wifi driver task: 3ffc11d4, prio:23, stack:6656, core=0[0m
+[0;32mI (604) wifi:wifi firmware version: ee91c8c[0m
+[0;32mI (604) wifi:wifi certification version: v7.0[0m
+[0;32mI (604) wifi:config NVS flash: enabled[0m
+[0;32mI (604) wifi:config nano formatting: disabled[0m
+[0;32mI (604) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (614) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (614) wifi:Init management short buffer num: 32[0m
+[0;32mI (624) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (624) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (634) wifi:Init static rx buffer num: 10[0m
+[0;32mI (634) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (634) wifi_init: rx ba win: 6[0m
+[0;32mI (644) wifi_init: accept mbox: 6[0m
+[0;32mI (644) wifi_init: tcpip mbox: 32[0m
+[0;32mI (644) wifi_init: udp mbox: 6[0m
+[0;32mI (654) wifi_init: tcp mbox: 6[0m
+[0;32mI (654) wifi_init: tcp tx win: 5760[0m
+[0;32mI (654) wifi_init: tcp rx win: 5760[0m
+[0;32mI (654) wifi_init: tcp mss: 1440[0m
+[0;32mI (664) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (664) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (674) phy_init: phy_version 4863,a3a4459,Oct 28 2025,14:30:06[0m
+[0;32mI (744) wifi:mode : sta (94:e6:86:a8:18:04)[0m
+[0;32mI (754) wifi:enable tsf[0m
+[0;32mI (754) wifi_station: wifi_init_sta finished[0m
+[0;32mI (764) wifi:new:<9,0>, old:<1,0>, ap:<255,255>, sta:<9,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (764) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (784) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (794) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (814) wifi:connected with TP-Link_7E64, aid = 2, channel 9, BW20, bssid = b0:19:21:e2:7e:63[0m
+[0;32mI (814) wifi:security: WPA2-PSK, phy: bgn, rssi: -12[0m
+[0;32mI (824) wifi:pm start, type: 1[0m
+
+[0;32mI (824) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (834) wifi:<ba-add>idx:0 (ifx:0, b0:19:21:e2:7e:63), tid:0, ssn:0, winSize:64[0m
+[0;32mI (844) wifi:<ba-add>idx:1 (ifx:0, b0:19:21:e2:7e:63), tid:7, ssn:0, winSize:64[0m
+[0;32mI (874) wifi:AP's beacon interval = 102400 us, DTIM period = 1[0m
+[0;32mI (1854) esp_netif_handlers: sta ip: 192.168.0.122, mask: 255.255.255.0, gw: 192.168.0.1[0m
+[0;32mI (1854) wifi_station: got ip: 192.168.0.122[0m
+[0;32mI (1854) wifi_station: connected to ap SSID:TP-Link_7E64 password:patronyacht103[0m
+[0;32mI (1864) webserver: Registering URI handlers[0m
+[0;32mI (1864) HTTP_CLIENT: HTTP request with url => https://api.open-meteo.com/v1/forecast?latitude=36.2127&longitude=-121.126&current=temperature_2m&timezone=America%2FLos_Angeles&temperature_unit=fahrenheit[0m
+[0;32mI (2964) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (4164) HTTP_CLIENT: HTTP_EVENT_ON_DATA, len=351[0m
+[0;32mI (4164) HTTP_CLIENT: Response:[0m
+{"latitude":36.225525,"longitude":-121.12362,"generationtime_ms":0.028014183044433594,"utc_offset_seconds":-28800,"timezone":"America/Los_Angeles","timezone_abbreviation":"GMT-8","elevation":103.0,"current_units":{"time":"iso8601","interval":"seconds","temperature_2m":"°F"},"current":{"time":"2026-01-29T18:45","interval":900,"temperature_2m":58.9}}
+[0;32mI (4194) HTTP_CLIENT: HTTP GET Status = 200, content_length = -1[0m
+[0;32mI (4194) HTTP_CLIENT: 7b 22 6c 61 74 69 74 75 64 65 22 3a 33 36 2e 32[0m
+[0;32mI (4204) HTTP_CLIENT: 32 35 35 32 35 2c 22 6c 6f 6e 67 69 74 75 64 65[0m
+[0;32mI (4204) HTTP_CLIENT: 22 3a 2d 31 32 31 2e 31 32 33 36 32 2c 22 67 65[0m
+[0;32mI (4214) HTTP_CLIENT: 6e 65 72 61 74 69 6f 6e 74 69 6d 65 5f 6d 73 22[0m
+[0;32mI (4224) HTTP_CLIENT: 3a 30 2e 30 32 38 30 31 34 31 38 33 30 34 34 34[0m
+[0;32mI (4224) HTTP_CLIENT: 33 33 35 39 34 2c 22 75 74 63 5f 6f 66 66 73 65[0m
+[0;32mI (4234) HTTP_CLIENT: 74 5f 73 65 63 6f 6e 64 73 22 3a 2d 32 38 38 30[0m
+[0;32mI (4234) HTTP_CLIENT: 30 2c 22 74 69 6d 65 7a 6f 6e 65 22 3a 22 41 6d[0m
+[0;32mI (4244) HTTP_CLIENT: 65 72 69 63 61 2f 4c 6f 73 5f 41 6e 67 65 6c 65[0m
+[0;32mI (4254) HTTP_CLIENT: 73 22 2c 22 74 69 6d 65 7a 6f 6e 65 5f 61 62 62[0m
+[0;32mI (4254) HTTP_CLIENT: 72 65 76 69 61 74 69 6f 6e 22 3a 22 47 4d 54 2d[0m
+[0;32mI (4264) HTTP_CLIENT: 38 22 2c 22 65 6c 65 76 61 74 69 6f 6e 22 3a 31[0m
+[0;32mI (4274) HTTP_CLIENT: 30 33 2e 30 2c 22 63 75 72 72 65 6e 74 5f 75 6e[0m
+[0;32mI (4274) HTTP_CLIENT: 69 74 73 22 3a 7b 22 74 69 6d 65 22 3a 22 69 73[0m
+[0;32mI (4284) HTTP_CLIENT: 6f 38 36 30 31 22 2c 22 69 6e 74 65 72 76 61 6c[0m
+[0;32mI (4284) HTTP_CLIENT: 22 3a 22 73 65 63 6f 6e 64 73 22 2c 22 74 65 6d[0m
+[0;32mI (4294) HTTP_CLIENT: 70 65 72 61 74 75 72 65 5f 32 6d 22 3a 22 c2 b0[0m
+[0;32mI (4304) HTTP_CLIENT: 46 22 7d 2c 22 63 75 72 72 65 6e 74 22 3a 7b 22[0m
+[0;32mI (4304) HTTP_CLIENT: 74 69 6d 65 22 3a 22 32 30 32 36 2d 30 31 2d 32[0m
+[0;32mI (4314) HTTP_CLIENT: 39 54 31 38 3a 34 35 22 2c 22 69 6e 74 65 72 76[0m
+[0;32mI (4314) HTTP_CLIENT: 61 6c 22 3a 39 30 30 2c 22 74 65 6d 70 65 72 61[0m
+[0;32mI (4324) HTTP_CLIENT: 74 75 72 65 5f 32 6d 22 3a 35 38 2e 39 7d 7d[0m
+[0;32mI (4334) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (4334) HTTP_CLIENT: Last esp error code: 0x616c227b[0m
+[0;32mI (4344) HTTP_CLIENT: Last mbedtls failure: 0x75746974[0m
+Accepting requests...
+Accepting requests...
+Accepting requests...
+Accepting requests...
+Accepting requests...
+Accepting requests...
+Accepting requests...
+Accepting requests...
+Accepting requests...
+Accepting requests...
+Accepting requests...
+Accepting requests...
+Accepting requests...
+Accepting requests...
+Accepting requests...
+Accepting requests...
+Accepting requests...
+Accepting requests...
+Accepting requests...
